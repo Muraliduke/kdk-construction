@@ -1,0 +1,5 @@
+/* Main App Container Styles */
+.app-container {
+  width: 100%;
+  overflow-x: hidden;
+}

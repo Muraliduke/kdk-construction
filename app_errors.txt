@@ -1,0 +1,28 @@
+﻿src/App-cld.tsx(145,19): error TS7031: Binding element 'children' implicitly has an 'any' type.
+src/App-cld.tsx(148,14): error TS2322: Type 'boolean | MutableRefObject<null>' is not assignable to type 'LegacyRef<HTMLDivElement> | undefined'.
+  Type 'false' is not assignable to type 'LegacyRef<HTMLDivElement> | undefined'.
+src/App-cld.tsx(163,22): error TS7031: Binding element 'text' implicitly has an 'any' type.
+src/App-cld.tsx(183,7): error TS6133: 'Logo' is declared but its value is never read.
+src/App-cld.tsx(183,17): error TS7031: Binding element 'onClick' implicitly has an 'any' type.
+src/App-cld.tsx(199,38): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/App-cld.tsx(205,20): error TS7031: Binding element 'onClick' implicitly has an 'any' type.
+src/App-cld.tsx(220,30): error TS2339: Property 'parentElement' does not exist on type 'EventTarget'.
+src/App-cld.tsx(227,26): error TS7031: Binding element 'open' implicitly has an 'any' type.
+src/App-cld.tsx(235,19): error TS7031: Binding element 'active' implicitly has an 'any' type.
+src/App-cld.tsx(235,27): error TS7031: Binding element 'onNav' implicitly has an 'any' type.
+src/App-cld.tsx(251,24): error TS7006: Parameter 'page' implicitly has an 'any' type.
+src/App-cld.tsx(346,23): error TS7031: Binding element 'tag' implicitly has an 'any' type.
+src/App-cld.tsx(346,28): error TS7031: Binding element 'title' implicitly has an 'any' type.
+src/App-cld.tsx(346,35): error TS7031: Binding element 'highlight' implicitly has an 'any' type.
+src/App-cld.tsx(365,21): error TS7031: Binding element 'onNav' implicitly has an 'any' type.
+src/App-cld.tsx(631,64): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ "Restaurant Franchise": string; Restaurant: string; "Health & Wellness": string; Pharmacy: string; Daycare: string; }'.
+  No index signature with a parameter of type 'string' was found on type '{ "Restaurant Franchise": string; Restaurant: string; "Health & Wellness": string; Pharmacy: string; Daycare: string; }'.
+src/App-cld.tsx(741,26): error TS7006: Parameter 'e' implicitly has an 'any' type.
+src/App-cld.tsx(742,26): error TS7006: Parameter 'e' implicitly has an 'any' type.
+src/App-cld.tsx(820,19): error TS7031: Binding element 'onNav' implicitly has an 'any' type.
+src/App-cld.tsx(851,57): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/App-cld.tsx(852,57): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/App-cld.tsx(874,36): error TS7006: Parameter 'page' implicitly has an 'any' type.
+src/App-cld.tsx(892,20): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ Home: Element; About: Element; Commitment: Element; Projects: Element; Expertise: Element; Contact: Element; }'.
+  No index signature with a parameter of type 'string' was found on type '{ Home: Element; About: Element; Commitment: Element; Projects: Element; Expertise: Element; Contact: Element; }'.
+src/Navbar.tsx(2,10): error TS6133: 'HardHat' is declared but its value is never read.

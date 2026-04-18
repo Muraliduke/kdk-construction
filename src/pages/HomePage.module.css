@@ -1,0 +1,191 @@
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy-mid) 55%, #1a4a62 100%);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.heroShape1 {
+    position: absolute;
+    right: -80px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 52vw;
+    height: 82vh;
+    background: rgba(232, 160, 32, 0.04);
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 15%);
+    border: 1px solid rgba(232, 160, 32, 0.12);
+}
+
+.heroShape2 {
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40vw;
+    height: 68vh;
+    background: rgba(232, 160, 32, 0.025);
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 15%);
+    border: 1px solid rgba(232, 160, 32, 0.07);
+}
+
+.heroContent {
+    max-width: 760px;
+}
+
+.heroTags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+}
+
+.heroTag {
+    background: rgba(232, 160, 32, 0.12);
+    border: 1px solid rgba(232, 160, 32, 0.3);
+    color: var(--amber);
+    font-family: var(--font-display);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+}
+
+.heroTitle {
+    color: white;
+}
+
+.heroSub {
+    font-size: 19px;
+    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.68);
+    max-width: 540px;
+    margin-bottom: 40px;
+}
+
+.heroBtns {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.completedProjects {
+    margin-top: 60px;
+}
+
+.completedProjectsTitle {
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 14px;
+    font-family: var(--font-display);
+    font-weight: 700;
+}
+
+.completedProjectsList {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.locationTag {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 6px 16px;
+    font-size: 13px;
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.heroBottomBar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--amber), transparent);
+}
+
+.statsSection {
+    background: var(--amber);
+}
+
+.statItem {
+    text-align: center;
+    padding: 22px 20px;
+    border-right: 1px solid rgba(0, 0, 0, 0.14);
+}
+
+.statItem:last-child {
+    border-right: none;
+}
+
+.statNum {
+    font-family: var(--font-display);
+    font-size: 38px;
+    font-weight: 900;
+    color: var(--navy-dark);
+}
+
+.statLabel {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(7, 31, 43, 0.6);
+    font-family: var(--font-display);
+}
+
+.servicesSection {
+    background: var(--navy-dark);
+    padding: 96px 0;
+}
+
+.servicesTitle {
+    margin-bottom: 56px;
+    max-width: 560px;
+}
+
+.serviceCard {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    padding: 44px 36px;
+}
+
+.serviceIcon {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.serviceName {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    letter-spacing: 0.5px;
+}
+
+.serviceDesc {
+    color: rgba(255, 255, 255, 0.55);
+    line-height: 1.75;
+    font-size: 15px;
+}
+
+.ctaSection {
+    background: linear-gradient(135deg, var(--teal), var(--navy-mid));
+    padding: 72px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.ctaSub {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+}

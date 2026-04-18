@@ -1,0 +1,19 @@
+:root {
+    /* Colors */
+    --navy: #0B3347;
+    --navy-dark: #071f2b;
+    --navy-mid: #0d3d57;
+    --teal: #0F5E7A;
+    --amber: #eba922;
+    --amber-light: #F5B93A;
+    --white: #FFFFFF;
+    --text-dark: #0B3347;
+
+    /* Fonts */
+    --font-display: 'Barlow Condensed', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+
+    /* Spacing & Sizes */
+    --max-width: 1320px;
+    --nav-height: 72px;
+}

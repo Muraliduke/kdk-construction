@@ -1,0 +1,81 @@
+.page {
+    min-height: 100vh;
+    padding-top: 72px;
+}
+
+.content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 88px 32px;
+}
+
+.visionBox {
+    background: rgba(232, 160, 32, 0.055);
+    border: 1px solid rgba(232, 160, 32, 0.22);
+    padding: 60px 64px;
+    margin-bottom: 28px;
+    position: relative;
+    overflow: hidden;
+}
+
+.visionCircle {
+    position: absolute;
+    right: -30px;
+    top: -30px;
+    width: 220px;
+    height: 220px;
+    background: rgba(232, 160, 32, 0.035);
+    border-radius: 50%;
+}
+
+.missionBox {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    padding: 60px 64px;
+}
+
+.heading {
+    margin-bottom: 28px;
+    max-width: 680px;
+}
+
+.text {
+    font-size: 17px;
+    line-height: 1.85;
+    color: rgba(255, 255, 255, 0.68);
+    max-width: 780px;
+    margin-bottom: 18px;
+}
+
+.textLast {
+    margin-bottom: 0;
+}
+
+.commitmentTitle {
+    font-family: var(--font-display);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 20px;
+}
+
+.checkGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+}
+
+.quoteBox {
+    margin-top: 40px;
+    padding-top: 28px;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.quoteText {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-style: italic;
+    color: var(--amber);
+}

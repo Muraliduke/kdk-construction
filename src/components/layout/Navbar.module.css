@@ -1,0 +1,153 @@
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: background 0.35s ease, border-color 0.35s ease;
+}
+
+.scrolled {
+    background: rgba(7, 31, 43, 0.98);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(232, 160, 32, 0.18);
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+    height: var(--nav-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.logoImg {
+    height: 44px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.fallbackLogo {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.fallbackLogoAccent {
+    color: var(--amber);
+}
+
+.links {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.navLink {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-display);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.72);
+    padding: 8px 13px;
+    position: relative;
+    transition: color 0.2s;
+}
+
+.navLinkActive {
+    color: var(--amber);
+}
+
+.activeIndicator {
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 2px;
+    background: var(--amber);
+    border-radius: 1px;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.hamburgerIcon {
+    width: 24px;
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.hamburgerLine {
+    display: block;
+    height: 2px;
+    background: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.drawer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.drawerOpen {
+    max-height: 500px;
+    border-top: 1px solid rgba(232, 160, 32, 0.15);
+    background: rgba(7, 31, 43, 0.98);
+}
+
+.drawerContent {
+    padding: 8px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.mobileLink {
+    background: none;
+    border: none;
+    border-left: 3px solid transparent;
+    cursor: pointer;
+    font-family: var(--font-display);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.75);
+    padding: 14px 16px;
+    text-align: left;
+    transition: all 0.2s ease;
+}
+
+.mobileLinkActive {
+    background: rgba(232, 160, 32, 0.1);
+    border-left: 3px solid var(--amber);
+    color: var(--amber);
+}

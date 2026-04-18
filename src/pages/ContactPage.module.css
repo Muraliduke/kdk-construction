@@ -1,0 +1,127 @@
+.page {
+    min-height: 100vh;
+    padding-top: 72px;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 88px 32px;
+}
+
+.introText {
+    font-size: 17px;
+    line-height: 1.85;
+    color: rgba(255, 255, 255, 0.58);
+    margin-bottom: 48px;
+}
+
+.infoItem {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    align-items: flex-start;
+}
+
+.infoIcon {
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+.infoLabel {
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--amber);
+    font-family: var(--font-display);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.infoValue {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.citiesBox {
+    margin-top: 40px;
+    padding: 32px;
+    background: rgba(232, 160, 32, 0.07);
+    border: 1px solid rgba(232, 160, 32, 0.18);
+}
+
+.citiesTitle {
+    font-family: var(--font-display);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 12px;
+}
+
+.citiesList {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.thankYouText {
+    font-family: var(--font-display);
+    font-size: 17px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.6;
+}
+
+.successBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 440px;
+    background: rgba(232, 160, 32, 0.055);
+    border: 1px solid rgba(232, 160, 32, 0.22);
+    padding: 64px;
+    text-align: center;
+}
+
+.successIcon {
+    width: 72px;
+    height: 72px;
+    background: var(--amber);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin-bottom: 28px;
+    color: var(--navy-dark);
+}
+
+.successText {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 16px;
+    max-width: 340px;
+    margin-bottom: 32px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.submitBtn {
+    width: 100%;
+    justify-content: center;
+    margin-top: 4px;
+}
+
+.formFooter {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.25);
+    text-align: center;
+}

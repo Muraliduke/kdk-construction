@@ -1,0 +1,28 @@
+.wrapper {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    background: var(--amber);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 900;
+    color: var(--navy-dark);
+    font-family: var(--font-display);
+    clip-path: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 20% 100%, 0 80%);
+}
+
+.text {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.6;
+}

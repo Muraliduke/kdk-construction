@@ -1,0 +1,260 @@
+.page {
+    min-height: 100vh;
+    padding-top: 72px;
+}
+
+.content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 72px 32px;
+}
+
+.introText {
+    font-size: 17px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.6);
+    max-width: 760px;
+    margin-bottom: 16px;
+}
+
+.subText {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.45);
+    margin-bottom: 8px;
+}
+
+.filterContainer {
+    display: flex;
+    gap: 8px;
+    margin: 40px 0 48px;
+    flex-wrap: wrap;
+}
+
+.filterBtn {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.04);
+    color: rgba(255, 255, 255, 0.6);
+    font-family: var(--font-display);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 9px 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filterBtnActive {
+    background: var(--amber);
+    border-color: var(--amber);
+    color: var(--navy-dark);
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    overflow: hidden;
+}
+
+.cardHeader {
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover !important;
+    background-position: center !important;
+    cursor: pointer;
+}
+
+.cardHeader::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 100%);
+    pointer-events: none;
+}
+
+.cardId {
+    font-family: var(--font-display);
+    font-size: 72px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.07);
+    position: absolute;
+    letter-spacing: -2px;
+}
+
+.cardTag {
+    color: var(--navy-dark);
+    font-family: var(--font-display);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+.cardBody {
+    padding: 26px 28px 30px;
+}
+
+.cardTitle {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.cardType {
+    font-size: 12px;
+    color: var(--amber);
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.cardDesc {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.52);
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.highlightsList {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 18px;
+}
+
+.highlightItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.52);
+}
+
+.dot {
+    width: 4px;
+    height: 4px;
+    background: var(--amber);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.cardFooter {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.locationIcon {
+    font-size: 12px;
+}
+
+.locationText {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalContent {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.closeBtn {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sliderImg {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.sliderNav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    z-index: 10;
+    backdrop-filter: blur(4px);
+}
+
+.sliderNav:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.sliderPrev { left: -60px; }
+.sliderNext { right: -60px; }
+
+@media (max-width: 1100px) {
+    .sliderPrev { left: 10px; }
+    .sliderNext { right: 10px; }
+}
+
+.galleryIndicator {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    z-index: 5;
+    backdrop-filter: blur(4px);
+}
+

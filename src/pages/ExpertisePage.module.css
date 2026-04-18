@@ -1,0 +1,103 @@
+.page {
+    min-height: 100vh;
+    padding-top: 72px;
+}
+
+.content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 88px 32px;
+}
+
+.introText {
+    font-size: 16px;
+    line-height: 1.85;
+    color: rgba(255, 255, 255, 0.58);
+    margin-bottom: 32px;
+}
+
+.specialtyCard {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    padding: 26px 22px;
+}
+
+.specialtyIcon {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.specialtyTitle {
+    font-family: var(--font-display);
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin-bottom: 8px;
+}
+
+.specialtyDesc {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.45);
+    line-height: 1.6;
+}
+
+.accentBar {
+    width: 24px;
+    height: 3px;
+    background: var(--amber);
+    margin-top: 14px;
+}
+
+.processSectionTitle {
+    margin-bottom: 56px;
+}
+
+.stepCard {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    padding: 48px 40px;
+}
+
+.stepCardAlt {
+    background: rgba(232, 160, 32, 0.08);
+    border: 1px solid rgba(232, 160, 32, 0.22);
+}
+
+.stepIconContainer {
+    width: 64px;
+    height: 64px;
+    background: var(--amber);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+    clip-path: polygon(0 15%, 15% 0, 85% 0, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0 85%);
+}
+
+.stepNum {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--navy-dark);
+}
+
+.stepTitle {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.stepDesc {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.58);
+    line-height: 1.75;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}

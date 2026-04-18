@@ -1,0 +1,113 @@
+.footer {
+    background: var(--navy-dark);
+    border-top: 1px solid rgba(232, 160, 32, 0.14);
+    padding: 52px 0 24px;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.logoContainer {
+    margin-bottom: 20px;
+}
+
+.logoImg {
+    height: 75px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.description {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.38);
+    line-height: 1.75;
+    max-width: 320px;
+    margin-bottom: 16px;
+}
+
+.link {
+    font-size: 13px;
+    color: var(--amber);
+    margin-bottom: 4px;
+}
+
+.contactInfo {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.35);
+    margin-bottom: 2px;
+}
+
+.socialContainer {
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.socialLink {
+    color: rgba(255, 255, 255, 0.35);
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+.socialLink:hover {
+    color: var(--amber);
+}
+
+.sectionTitle {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 18px;
+}
+
+.navBtn {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.38);
+    padding: 6px 0;
+    text-align: left;
+    transition: color 0.2s;
+}
+
+.navBtn:hover {
+    color: var(--amber);
+}
+
+.city {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.38);
+    padding: 5px 0;
+}
+
+.bottomBar {
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    padding-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.legal {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.22);
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 0 24px;
+    }
+}

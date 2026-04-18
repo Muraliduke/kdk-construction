@@ -1,0 +1,103 @@
+.page {
+    min-height: 100vh;
+    padding-top: 72px;
+}
+
+.content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 88px 32px;
+}
+
+.introText {
+    font-size: 20px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.88);
+    margin-bottom: 28px;
+}
+
+.subText {
+    font-size: 16px;
+    line-height: 1.85;
+    color: rgba(255, 255, 255, 0.58);
+    margin-bottom: 24px;
+}
+
+.quote {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.4);
+    letter-spacing: 0.3px;
+}
+
+.featuresGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.featureCard {
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    padding: 30px 24px;
+}
+
+.featureIcon {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.featureTitle {
+    font-family: var(--font-display);
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.featureDesc {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.48);
+    line-height: 1.6;
+}
+
+.locationsBox {
+    margin-top: 14px;
+    background: rgba(232, 160, 32, 0.07);
+    border: 1px solid rgba(232, 160, 32, 0.2);
+    padding: 28px;
+}
+
+.locationsTitle {
+    font-family: var(--font-display);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 14px;
+}
+
+.locationsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.locationItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.locationDot {
+    width: 6px;
+    height: 6px;
+    background: var(--amber);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
