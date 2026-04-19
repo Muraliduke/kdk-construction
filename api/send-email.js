@@ -1,4 +1,4 @@
-const nodemailer = require('nodemailer');
+import nodemailer from 'nodemailer';
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -8,7 +8,8 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-module.exports = async (req, res) => {
+export default async function handler(req, res) {
+  console.log('🚀 Function triggered');
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST,OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
@@ -22,9 +23,10 @@ module.exports = async (req, res) => {
   }
 
   const { name = 'Anonymous', company, email, phone, project, message } = req.body || {};
+  console.log('🚀Email details:', { name, company, email, phone, project, message },process.env.EMAIL_USER);
 
   const mailOptions = {
-    from: process.env.FROM_EMAIL || process.env.GMAIL_USER || 'no-reply@example.com',
+    from: process.env.FROM_EMAIL || process.env.EMAIL_USER || 'no-reply@example.com',
     to: process.env.TO_EMAIL || 'paras@kdkconstruction.ca',
     subject: `New Contact Inquiry from ${name}`,
     html: `
@@ -45,4 +47,4 @@ module.exports = async (req, res) => {
     console.error('Error sending email:', error);
     return res.status(500).json({ success: false, error: error.toString() });
   }
-};
+}
