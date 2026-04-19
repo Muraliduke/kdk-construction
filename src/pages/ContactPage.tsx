@@ -21,7 +21,7 @@ export const ContactPage = () => {
         try {
             // Replace the URL with your deployed Firebase Cloud Function URL
             // e.g., "https://us-central1-YOUR_PROJECT_ID.cloudfunctions.net/sendContactEmail"
-            const response = await fetch("http://localhost:5001/kdk-construction/us-central1/sendContactEmail", {
+            const response = await fetch("/api/send-email", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
