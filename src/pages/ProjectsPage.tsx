@@ -6,11 +6,39 @@ import { PageHeader } from "../components/common/PageHeader";
 // import { ProjectSlider } from "../components/ProjectSlider";
 import OsmowsBefore from "../assets/BeforeAfter/Osmows_Before.jpg";
 import OsmowsAfter from "../assets/BeforeAfter/Osmows_After.jpg";
+import HealPreview from "../assets/Heal/2.jpg";
+import Heal1 from "../assets/Heal/1.jpg";
+import Heal2 from "../assets/Heal/3.jpg";
+import Heal3 from "../assets/Heal/4.jpg";
+import OsmowPreview from "../assets/Osmows/1.jpg";
+import Osmow1 from "../assets/Osmows/0.jpg";
+import Osmow2 from "../assets/Osmows/2.jpg";
+import Osmow3 from "../assets/Osmows/3.jpg";
+import Osmow4 from "../assets/Osmows/4.jpg";
+import KukurukuPreview from "../assets/Kukuruku/1.jpg";
+
+
 
 const projectsData = [
-    { id: 1, title: "Heal Wellness", type: "Health & Wellness", tag: "Multiple Locations", locations: "Calgary · Red Deer · Grand Prairie · Cochrane", color: "#1a4a62", desc: "Multiple locations completed across Alberta. Full interior construction and brand-standard execution across all sites.", highlights: ["Multi-location rollout", "Brand-standard interiors", "Full interior construction"], bgImage: OsmowsAfter, gallery: [OsmowsAfter, OsmowsBefore] },
-    { id: 2, title: "Osmow's Shawarma", type: "Restaurant Franchise", tag: "Franchise Build", locations: "Multiple Alberta Locations", color: "#2d4a1e", desc: "Completed several franchise locations across Alberta. Focused on speed, consistency, and strict brand compliance.", highlights: ["Franchise brand compliance", "Fast-track execution", "Consistent quality"], bgImage: OsmowsBefore, gallery: [OsmowsBefore, OsmowsAfter] },
-    { id: 3, title: "KukuRuku Chicken", type: "Restaurant", tag: "Mall Location", locations: "Alberta", color: "#4a2810", desc: "Restaurant construction and interior fit-outs designed for operational efficiency in a mall environment.", highlights: ["Mall integration", "Operational layout", "Interior fit-out"], bgImage: OsmowsAfter, gallery: [OsmowsAfter, OsmowsBefore] },
+    {
+        id: 1, title: "Heal Wellness", type: "Health & Wellness", tag: "Multiple Locations",
+        locations: "Calgary · Red Deer · Grand Prairie · Cochrane", color: "#1a4a62",
+        desc: "Multiple locations completed across Alberta. Full interior construction and brand-standard execution across all sites.",
+        highlights: ["Multi-location rollout", "Brand-standard interiors", "Full interior construction"],
+        bgImage: HealPreview, gallery: [HealPreview, Heal1, Heal2, Heal3]
+    },
+    {
+        id: 2, title: "Osmow's Shawarma", type: "Restaurant Franchise", tag: "Franchise Build", locations: "Multiple Alberta Locations",
+        color: "#2d4a1e", desc: "Completed several franchise locations across Alberta. Focused on speed, consistency, and strict brand compliance.",
+        highlights: ["Franchise brand compliance", "Fast-track execution", "Consistent quality"],
+        bgImage: OsmowPreview, gallery: [Osmow1, Osmow2, Osmow3, Osmow4, OsmowPreview]
+    },
+    {
+        id: 3, title: "KukuRuku Chicken", type: "Restaurant", tag: "Mall Location", locations: "Alberta", color: "#4a2810",
+        desc: "Restaurant construction and interior fit-outs designed for operational efficiency in a mall environment.",
+        highlights: ["Mall integration", "Operational layout", "Interior fit-out"],
+        bgImage: KukurukuPreview, gallery: [KukurukuPreview]
+    },
     { id: 4, title: "Up-Town Pharmacy", type: "Pharmacy", tag: "Specialty Interior", locations: "Alberta", color: "#1a3a4a", desc: "Specialty pharmacy interior with compliance-driven layout, dispensary build-out, and retail front-end.", highlights: ["Regulatory compliance", "Dispensary build-out", "Retail front-end"], bgImage: OsmowsBefore, gallery: [OsmowsBefore, OsmowsAfter] },
     { id: 5, title: "Daycare Facility", type: "Daycare", tag: "Specialty Interior", locations: "Alberta", color: "#3a1a4a", desc: "Purpose-built daycare interior meeting all provincial childcare facility requirements — safe, durable, and welcoming.", highlights: ["Provincial code compliance", "Child-safe finishes", "Durable interiors"], bgImage: OsmowsAfter, gallery: [OsmowsAfter, OsmowsBefore] },
 ];

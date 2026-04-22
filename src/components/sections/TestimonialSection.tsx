@@ -53,8 +53,8 @@ export const TestimonialSection = () => {
                                 <div className={styles.text}>
                                     "{t.text}"
                                 </div>
-                                
-                                <div className={styles.authorContainer}>
+
+                                {/* <div className={styles.authorContainer}>
                                     <div className={styles.avatar}>
                                         {t.initials}
                                     </div>
@@ -62,7 +62,7 @@ export const TestimonialSection = () => {
                                         <div className={styles.authorName}>{t.author}</div>
                                         <div className={styles.authorRole}>{t.role}</div>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </Reveal>
                     ))}
