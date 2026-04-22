@@ -1,10 +1,13 @@
 import nodemailer from 'nodemailer';
 
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  // service: 'gmail',
+  host: "smtp.office365.com",
+  port: 587,
+  secure: false,
   auth: {
-    user: process.env.EMAIL_USER || '',
-    pass: process.env.EMAIL_PASS || ''
+    user: process.env.EMAIL_C_USER || '',
+    pass: process.env.EMAIL_C_PASS || ''
   }
 });
 
@@ -23,10 +26,10 @@ export default async function handler(req, res) {
   }
 
   const { name = 'Anonymous', company, email, phone, project, message } = req.body || {};
-  console.log('🚀Email details:', { name, company, email, phone, project, message },process.env.EMAIL_USER);
+  console.log('🚀Email details:', { name, company, email, phone, project, message }, process.env.EMAIL_USER);
 
   const mailOptions = {
-    from: process.env.FROM_EMAIL || process.env.EMAIL_USER || 'no-reply@example.com',
+    from: 'kdk-webenquiry@kdk.ca',
     to: process.env.TO_EMAIL || 'paras@kdkconstruction.ca',
     subject: `New Contact Inquiry from ${name}`,
     html: `
@@ -39,6 +42,8 @@ export default async function handler(req, res) {
       <p><strong>Message:</strong> ${message || 'N/A'}</p>
     `
   };
+
+  console.log('🚀Email details: mailOptions', mailOptions);
 
   try {
     await transporter.sendMail(mailOptions);
