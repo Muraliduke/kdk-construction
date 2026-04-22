@@ -8,8 +8,7 @@ import OsmowsBefore from "../assets/BeforeAfter/Osmows_Before.jpg";
 import OsmowsAfter from "../assets/BeforeAfter/Osmows_After.jpg";
 import HealPreview from "../assets/Heal/2.jpg";
 import Heal1 from "../assets/Heal/1.jpg";
-import Heal2 from "../assets/Heal/3.jpg";
-import Heal3 from "../assets/Heal/4.jpg";
+import Heal2 from "../assets/Heal/4.jpg";
 import OsmowPreview from "../assets/Osmows/1.jpg";
 import Osmow1 from "../assets/Osmows/0.jpg";
 import Osmow2 from "../assets/Osmows/2.jpg";
@@ -26,7 +25,7 @@ const projectsData = [
         locations: "Calgary · Red Deer · Grand Prairie · Cochrane", color: "#1a4a62",
         desc: "Multiple locations completed across Alberta. Full interior construction and brand-standard execution across all sites.",
         highlights: ["Multi-location rollout", "Brand-standard interiors", "Full interior construction"],
-        bgImage: HealPreview, gallery: [HealPreview, Heal1, Heal2, Heal3]
+        bgImage: HealPreview, gallery: [HealPreview, Heal1, Heal2]
     },
     {
         id: 2, title: "Osmow's Shawarma", type: "Restaurant Franchise", tag: "Franchise Build", locations: "Multiple Alberta Locations",
