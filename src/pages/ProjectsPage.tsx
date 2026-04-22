@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, X, Image as ImageIcon } from "lucide-react";
 import styles from "./ProjectsPage.module.css";
 import { Reveal } from "../components/common/Reveal";
@@ -16,6 +16,7 @@ import Osmow2 from "../assets/Osmows/2.jpg";
 import Osmow3 from "../assets/Osmows/3.jpg";
 import Osmow4 from "../assets/Osmows/4.jpg";
 import KukurukuPreview from "../assets/Kukuruku/1.jpg";
+import { preloadImages } from "../hooks/useImagePreloader";
 
 
 
@@ -61,6 +62,12 @@ export const ProjectsPage = () => {
 
     const types = ["All", ...Array.from(new Set(projectsData.map(p => p.type)))];
     const filtered = filter === "All" ? projectsData : projectsData.filter(p => p.type === filter);
+
+    useEffect(() => {
+        // Preload all project images (backgrounds + galleries) once on mount
+        const allUrls = projectsData.flatMap(p => ([...(p.gallery || []), p.bgImage]));
+        preloadImages(allUrls);
+    }, []);
 
     const openGallery = (images: string[]) => {
         if (images && images.length > 0) {
