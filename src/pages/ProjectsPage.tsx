@@ -40,8 +40,18 @@ const projectsData = [
         highlights: ["Mall integration", "Operational layout", "Interior fit-out"],
         bgImage: KukurukuPreview, gallery: [KukurukuPreview]
     },
-    { id: 4, title: "Up-Town Pharmacy", type: "Pharmacy", tag: "Specialty Interior", locations: "Alberta", color: "#1a3a4a", desc: "Specialty pharmacy interior with compliance-driven layout, dispensary build-out, and retail front-end.", highlights: ["Regulatory compliance", "Dispensary build-out", "Retail front-end"], bgImage: OsmowsBefore, gallery: [OsmowsBefore, OsmowsAfter] },
-    { id: 5, title: "Daycare Facility", type: "Daycare", tag: "Specialty Interior", locations: "Alberta", color: "#3a1a4a", desc: "Purpose-built daycare interior meeting all provincial childcare facility requirements — safe, durable, and welcoming.", highlights: ["Provincial code compliance", "Child-safe finishes", "Durable interiors"], bgImage: OsmowsAfter, gallery: [OsmowsAfter, OsmowsBefore] },
+    {
+        id: 4, title: "Up-Town Pharmacy", type: "Pharmacy", tag: "Specialty Interior", locations: "Alberta",
+        color: "#1a3a4a", desc: "Specialty pharmacy interior with compliance-driven layout, dispensary build-out, and retail front-end.",
+        highlights: ["Regulatory compliance", "Dispensary build-out", "Retail front-end"],
+        //   bgImage: OsmowsBefore, gallery: [OsmowsBefore, OsmowsAfter]
+    },
+    {
+        id: 5, title: "Daycare Facility", type: "Daycare", tag: "Specialty Interior", locations: "Alberta",
+        color: "#3a1a4a", desc: "Purpose-built daycare interior meeting all provincial childcare facility requirements — safe, durable, and welcoming.",
+        highlights: ["Provincial code compliance", "Child-safe finishes", "Durable interiors"],
+        //  bgImage: OsmowsAfter, gallery: [OsmowsAfter, OsmowsBefore] 
+    },
 ];
 
 const getColorForType = (type: string) => {
