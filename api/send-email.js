@@ -1,10 +1,7 @@
 import nodemailer from 'nodemailer';
 
 const transporter = nodemailer.createTransport({
-  // service: 'gmail',
-  host: "smtp.office365.com",
-  port: 587,
-  secure: false,
+  service: 'gmail',
   auth: {
     user: process.env.EMAIL_C_USER || '',
     pass: process.env.EMAIL_C_PASS || ''
@@ -29,7 +26,7 @@ export default async function handler(req, res) {
   console.log('🚀Email details:', { name, company, email, phone, project, message }, process.env.EMAIL_USER);
 
   const mailOptions = {
-    from: 'kdk-webenquiry@kdk.ca',
+    from: 'kdkconstructionwebenquiry@gmail.com',
     to: process.env.TO_EMAIL || 'paras@kdkconstruction.ca',
     subject: `New Contact Inquiry from ${name}`,
     html: `
