@@ -134,8 +134,8 @@ export const ProjectsPage = () => {
                                 <div
                                     className={styles.cardHeader}
                                     // style={{ background: `linear-gradient(135deg, ${p.color}88, var(--navy-mid)), url(${p.bgImage})` }}
-                                    style={{ background: `url(${p.bgImage})` }}
-                                    onClick={() => openGallery(p.gallery)}
+                                    style={{ background: `url(${p?.bgImage})` }}
+                                    onClick={() => p.gallery && openGallery(p.gallery)}
                                 >
                                     <div className="grid-overlay" style={{ zIndex: 1 }} />
                                     <span className={styles.cardId} style={{ zIndex: 1 }}>{String(p.id).padStart(2, "0")}</span>
